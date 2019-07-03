@@ -1,0 +1,210 @@
+/** リリース掲載サイトスタイル (COMNEX指定) **/
+
+body a {
+    word-wrap: break-word;
+}
+
+.special-card-area .card-body .card-text a.list-group-item {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 767px) {
+    main .container h1.h1-no-border {
+        margin-bottom: 0;
+        padding-bottom: 0.5rem;
+        border-bottom: none;
+    }
+}
+
+.btn.btn-search {
+    margin-bottom: 1.5rem;
+    font-size: .9rem;
+    padding: 1rem;
+}
+
+.search-area h1 a {
+    color: #999;
+}
+
+input[type=text][readonly=readonly], textarea.md-textarea[readonly=readonly] {
+    color:#212529;
+    border-bottom: 1px dashed #ccc;
+}
+
+#image, #movie, #past, #tenpu {
+    margin-top: -70px;
+    padding-top: 70px;
+}
+
+.breadcrumb-item.no-link {
+    color: #868e96;
+}
+
+span.logo-dummy {
+    display: block;
+    width: 100%;
+}
+
+.special-card-area .card {
+    overflow: hidden;
+    z-index: 1;
+}
+
+.special-card-area .topic-card:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+}
+
+.special-card-area .topic-card {
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: all .2s linear;
+}
+
+@media (max-width: 768px) {
+    .special-card-area .topic-card {
+        height: 190px;
+    }
+    .special-card-area .card {
+        border-radius: 0;
+    }
+}
+
+@media (min-width: 769px) {
+    .special-card-area .topic-card {
+        height: 240px;
+    }
+}
+
+@media (min-width: 992px) {
+    .special-card-area .topic-card {
+        height: 260px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .single-area .brand-area, .news-card-area .brand-area {
+        display: block;
+        position: relative;
+    }
+    .single-area .brand-area img, .news-card-area .brand-area img {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        max-width: calc(100% - 2em);
+        max-height: calc(100% - 2em);
+    }
+}
+
+@media print, screen and (min-width: 768px) {
+    .single-area .brand-area, .news-card-area .brand-area {
+        display: block;
+        position: relative;
+    }
+    .single-area .brand-area img, .news-card-area .brand-area img {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        max-width: calc(100% - 2em);
+        max-height: calc(100% - 2em);
+    }
+}
+
+/* タッチスクリーンでもlightboxに左右矢印を出す */
+.pswp--touch .pswp__button--arrow--left,
+.pswp--touch .pswp__button--arrow--right {
+    visibility: visible;
+}
+
+/* PRWireカスタマイズ版PhotoSwipe用スタイル */
+.prwire-lightbox figure {
+    margin:0;
+    float:left;
+}
+
+.prwire-lightbox figure:nth-child(2n+1) {
+		clear: both;
+	}
+
+.prwire-lightbox figure .img-fluid {
+    display:inline;
+}
+.prwire-lightbox figure img {
+    cursor:-webkit-zoom-in;
+    cursor:zoom-in;
+    -webkit-transition:opacity .4s;
+    transition:opacity .4s;
+    border-radius:0;
+}
+.prwire-lightbox figure img:hover {
+    opacity:.8;
+}
+.prwire-lightbox.no-margin [class*=col-] {
+    padding:0;
+}
+.prwire-lightbox [class*=col-] {
+    padding:.5rem;
+}
+.prwire-lightbox figure span {
+	height: 80px;
+	text-align: center;
+    display: flex;
+    align-items: center;
+/*    justify-content: center;*/
+}
+.prwire-lightbox figure img {
+    max-height: 50px;
+    width: auto;
+	margin:auto auto 10px;
+}
+@media screen and (min-width: 576px) {
+    .prwire-lightbox figure span {
+       height: 120px;
+     }
+    .prwire-lightbox figure img {
+        max-height: 90px;
+        width: auto;
+    }
+	
+}
+@media screen and (min-width: 768px) {
+    .prwire-lightbox figure span {
+     height: 110px;
+    }
+    .prwire-lightbox figure img {
+        max-height: 80px;
+        width: auto;
+    }
+	.prwire-lightbox figure:nth-child(2n+1) {
+		clear: none;
+	}
+	.prwire-lightbox figure:nth-child(4n+1) {
+		clear: both;
+	}
+}
+@media print, screen and (min-width: 992px) {
+    .prwire-lightbox figure span {
+    height: 130px;
+    }
+    .prwire-lightbox figure img {
+        max-height: 100px;
+        width: auto;
+    }
+}
+
+.release-company p {
+    margin-bottom: 0;
+}
