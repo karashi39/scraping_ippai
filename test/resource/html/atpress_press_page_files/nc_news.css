@@ -1,0 +1,585 @@
+/* Newscastコンテンツ用CSS */
+
+
+h2.nc-h2 {
+  width: 100%;
+  font-size: 26px !important;
+  padding: 2px 0px 2px 20px !important;
+  font-weight: bold !important;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+  position: relative;
+}
+
+h2.nc-h2:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: calc(100% - 0.4em);
+  background: #999999;
+}
+
+#news_body_block h3.nc-h3 {
+  width: 100%;
+  font-size: 23px !important;
+  color: #3d3d3d !important;
+  line-height: 1.3em !important;
+  border-bottom: solid 2px #cccccc;
+  position: relative;
+  padding-bottom: 8px !important;
+  margin-top: 16px !important;
+  margin-bottom: 20px !important;
+}
+
+h4.nc-h4 {
+  width: 100%;
+  font-size: 18px !important;
+  margin-top: 10px !important;
+  margin-bottom: 20px !important;
+}
+
+.nc-text {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.nc-hr {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid #e8e8e8;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.nc-qut {
+  width: 100%;
+  background-color:#F6F6F6;
+  border-left: solid 1px #cccccc;
+  margin-bottom: 20px;
+}
+
+.nc-qut blockquote {
+  padding: 15px 20px 15px 20px;
+  font-style: italic;
+  color: gray;
+  height: 100%;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.nc-btn {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.nc-btn a {
+  padding:12px 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius:4px;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  user-select: none;border: 1px solid transparent;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  color: #fff!important;
+  background-color: #007bff;
+  border-color: #007bff;
+  text-decoration:none!important;
+  
+}
+
+.nc-link {
+  width: 100%;
+  min-height: 120px;
+  position: relative;
+  border: 1px solid #e6e6e6;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.nc-link a {
+  text-decoration: none !important;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+}
+
+.nc-link .link_title {
+  font-weight: bold;
+  margin-bottom: 5px;
+  line-height: 1.2;
+  color: #000!important;
+}
+
+.nc-link .page_description {
+  color: #666666!important;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.nc-link .page_host {
+  font-size: 10px;
+  margin-top: 5px;
+  color: #999!important;
+}
+
+.nc-img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.nc-img a {
+  text-decoration: none;
+  background-color: transparent;
+  text-align: center;
+  text-align: -webkit-center;
+  text-align: -moz-center;
+}
+
+.nc-img img {
+  max-width: 100%;
+}
+
+.nc-img div {
+  color:#787c7b!important;
+  font-size:14px;
+  text-align: center;
+  text-align: -webkit-center;
+  text-align: -moz-center;
+}
+
+.nc-file {
+  width: 100%;
+  min-height: 120px;
+  position: relative;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.nc-file a {
+  text-decoration: none !important;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+}
+
+.nc-file .link_image_frame {
+  height: 100%;
+  width: 25%;
+  border-left: 1px solid #e6e6e6;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color:#fff;
+}
+
+.nc-file .pdf {
+  background-image: url(https://newscast.jp/assets/img/extensions/pdf.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .doc {
+  background-image: url(https://newscast.jp/assets/img/extensions/doc.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .jpg {
+  background-image: url(https://newscast.jp/assets/img/extensions/jpg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .gif {
+  background-image: url(https://newscast.jp/assets/img/extensions/gif.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .png {
+  background-image: url(https://newscast.jp/assets/img/extensions/pmg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .svg {
+  background-image: url(https://newscast.jp/assets/img/extensions/svg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .xls {
+  background-image: url(https://newscast.jp/assets/img/extensions/xls.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .txt {
+  background-image: url(https://newscast.jp/assets/img/extensions/txt.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .ppt {
+  background-image: url(https://newscast.jp/assets/img/extensions/ppt.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* 拡張子が 3ds のためエスケープ */
+.nc-file .\0033\0064\0073 {
+  background-image: url(https://newscast.jp/assets/img/extensions/3ds.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .aac {
+  background-image: url(https://newscast.jp/assets/img/extensions/aac.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .ai {
+  background-image: url(https://newscast.jp/assets/img/extensions/ai.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .avi {
+  background-image: url(https://newscast.jp/assets/img/extensions/avi.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .bmp {
+  background-image: url(https://newscast.jp/assets/img/extensions/bmp.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .cad {
+  background-image: url(https://newscast.jp/assets/img/extensions/cad.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .cdr {
+  background-image: url(https://newscast.jp/assets/img/extensions/cdr.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .css {
+  background-image: url(https://newscast.jp/assets/img/extensions/css.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .dat {
+  background-image: url(https://newscast.jp/assets/img/extensions/dat.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .dll {
+  background-image: url(https://newscast.jp/assets/img/extensions/dll.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .dmg {
+  background-image: url(https://newscast.jp/assets/img/extensions/dmg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .else {
+  background-image: url(https://newscast.jp/assets/img/extensions/else.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .eps {
+  background-image: url(https://newscast.jp/assets/img/extensions/eps.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .fla {
+  background-image: url(https://newscast.jp/assets/img/extensions/fla.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .flv {
+  background-image: url(https://newscast.jp/assets/img/extensions/flv.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .html {
+  background-image: url(https://newscast.jp/assets/img/extensions/html.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .indd {
+  background-image: url(https://newscast.jp/assets/img/extensions/indd.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .iso {
+  background-image: url(https://newscast.jp/assets/img/extensions/iso.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .js {
+  background-image: url(https://newscast.jp/assets/img/extensions/js.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .midi {
+  background-image: url(https://newscast.jp/assets/img/extensions/midi.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .mov {
+  background-image: url(https://newscast.jp/assets/img/extensions/mov.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .mp3 {
+  background-image: url(https://newscast.jp/assets/img/extensions/mp3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .mpg {
+  background-image: url(https://newscast.jp/assets/img/extensions/mpg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .php {
+  background-image: url(https://newscast.jp/assets/img/extensions/php.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .ps {
+  background-image: url(https://newscast.jp/assets/img/extensions/ps.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .psd {
+  background-image: url(https://newscast.jp/assets/img/extensions/psd.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .raw {
+  background-image: url(https://newscast.jp/assets/img/extensions/raw.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .sql {
+  background-image: url(https://newscast.jp/assets/img/extensions/sql.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .svg {
+  background-image: url(https://newscast.jp/assets/img/extensions/svg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .tif {
+  background-image: url(https://newscast.jp/assets/img/extensions/tif.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .txt {
+  background-image: url(https://newscast.jp/assets/img/extensions/txt.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .wmv {
+  background-image: url(https://newscast.jp/assets/img/extensions/wmv.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .xml {
+  background-image: url(https://newscast.jp/assets/img/extensions/xml.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .zip {
+  background-image: url(https://newscast.jp/assets/img/extensions/zip.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nc-file .link_title {
+  color: #000!important;
+  font-weight: bold;
+  margin-bottom: 5px;
+  line-height: 1.2;
+}
+
+.nc-file .page_description {
+  color: #666666!important;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.nc-file .page_host {
+  font-size: 10px;
+  margin-top: 5px;
+  color: #999!important;
+}
+
+.nc-yutb {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+  text-align: -webkit-center;
+  text-align: -moz-center;
+}
+
+.nc-twtr {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+  text-align: -webkit-center;
+  text-align: -moz-center;
+}
+
+.nc-inst {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+  text-align: -webkit-center;
+  text-align: -moz-center;
+}
+
+.nc-map {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+  text-align: -webkit-center;
+  text-align: -moz-center;
+}
+
+.nc-map img {
+  max-width: 100%;
+}
+
+.nc-comp {
+  width: 100%;
+  position: relative;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #fafafa;
+  margin-bottom: 20px;
+}
+
+.nc-comp a {
+  text-decoration: none!important;
+  display: block;
+  padding: 16px;
+}
+
+.nc-comp .link_title {
+  color: #000!important;;
+  text-decoration:none;
+  font-size: 16px;
+  font-weight: 900!important;
+  margin-bottom: 5px;
+}
+
+.nc-comp .page_host {
+  font-size: 10px;
+  color: rgba(0,0,0,0.65)!important;
+  text-decoration:none;
+}
+
+.nc-sns-link {
+  display: none;
+}
